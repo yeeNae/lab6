@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Artykuły</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800 p-8 font-sans">
+    <div class="max-w-3xl mx-auto">
+        
+        <h1 class="text-3xl font-bold mb-6 text-blue-600">Lista Artykułów</h1>
+        
+        <div id="articles-list" class="space-y-4 mb-12">
+            <p class="text-gray-500">Ładowanie danych...</p>
+        </div>
+
+        <hr class="border-gray-300 mb-8">
+
+        <h2 class="text-2xl font-bold mb-4">Dodaj nowy artykuł</h2>
+        <form id="add-article-form" class="bg-white p-6 rounded shadow flex flex-col gap-4">
+            <input type="text" id="title" placeholder="Tytuł" required class="border p-2 rounded">
+            <input type="text" id="subtitle" placeholder="Podtytuł" class="border p-2 rounded">
+            <input type="text" id="author" placeholder="Autor" required class="border p-2 rounded">
+            <textarea id="content" placeholder="Treść artykułu..." required class="border p-2 rounded h-32"></textarea>
+            
+            <button type="submit" class="bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">
+                Wyślij artykuł
+            </button>
+        </form>
+
+    </div>
+
+    <script type="module" src="/src/articles.js"></script>
+
+    </body>
+</html>
